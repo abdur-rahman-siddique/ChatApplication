@@ -1,0 +1,41 @@
+Chat App
+A real-time chat application using WebAPI & SignalR. Available for Web and Desktop.
+
+Features
+Group chat
+Private chat "eg. /private(Name) Hello, how are you?"
+Photo message
+Basic Emojis
+Chat Rooms
+
+Technologies used
+WPF(Windows Presentation Foundation) in C#
+ASP.Net Core Web API
+SignalR
+ASP.Net Framework
+SQL Server Database
+Bootstrap
+Javascript
+
+Implementation Details 
+1. Chat.Web
+- WEB API Project
+- The project contains services and Hubs implementation related to chat operations and users management
+- It uses Signal-R for real time update in chat
+
+2. Chat.Desktop
+WPF desktop client to demonstrate use of single service in different platform
+
+Getting Started
+In order to run Desktop application you need first to run Chat.Web project which is the Chat Service:
+
+1. Grab the Project
+2. Open Visual Studio as Administrator and load the Solution
+3. Resolve any missing/required nuget package
+
+For Chat.Web
+Build Database. Open Package Manager Console and run the following commands:
+update-database
+
+For Chat.Desktop
+Run the desktop application: Right-Click - Debug - Start new instance
